@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BodyFatApp</string>
+    <string name="title_activity_my_account">MyAccount</string>
+    <string name="title_activity_measurements">Measurements</string>
+    <string name="title_activity_graph_main">GraphMain</string>
+    <string name="title_activity_profiles">Profiles</string>
+</resources>

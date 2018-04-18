@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "390612608200",
+    "firebase_url": "https://bodyfatapp.firebaseio.com",
+    "project_id": "bodyfatapp",
+    "storage_bucket": "bodyfatapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390612608200:android:5c634a04b2718d2f",
+        "android_client_info": {
+          "package_name": "com.example.michael.bodyfatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390612608200-6gir5i9mbgpsmvijq8g0nnp720dpn2fe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_E3ZKF_CobkW-lBmbA6wQP_XfxvyED6s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

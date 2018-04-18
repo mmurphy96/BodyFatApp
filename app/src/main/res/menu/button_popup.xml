@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fold3"
+        android:title="3 Fold Measurement"
+        />
+
+    <item
+        android:id="@+id/fold7"
+        android:title="7 Fold Measurement">
+
+    </item>
+
+
+</menu>

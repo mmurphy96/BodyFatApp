@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.michael.bodyfatapp.Menu.MainMenu"
+>
+
+    <Button
+        android:id="@+id/profilebutton"
+        android:layout_width="match_parent"
+        android:text="Profiles"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:paddingLeft="90dp"
+        android:drawablePadding="-110dp"
+        android:background="#4dcbc9"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <Button
+        android:id="@+id/MeasurementButton"
+        android:text="Measurements"
+        android:background="#4988ac"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+
+     android:drawableLeft="@drawable/caliper_96"
+        android:paddingLeft="70dp"
+        android:drawablePadding="-70dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+
+        />
+
+    <Button
+        android:id="@+id/GraphsButton"
+        android:text="Graphs"
+        android:background="#42668c"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+android:drawableLeft="@drawable/ic_chart_line_white_24dp"
+        android:paddingLeft="100dp"
+        android:drawablePadding="-120dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <Button
+        android:id="@+id/AccountButton"
+        android:text="Account"
+        android:background="#484464"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_settings"
+        android:paddingLeft="100dp"
+        android:drawablePadding="-110dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+</LinearLayout>

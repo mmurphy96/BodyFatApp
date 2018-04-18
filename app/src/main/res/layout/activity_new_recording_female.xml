@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/female_recording"
+    android:fitsSystemWindows="true"
+    android:paddingLeft="10dp"
+    tools:context="com.example.michael.bodyfatapp.Recordings.NewRecordingFemale">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProfileView"
+        android:text="Profile:"
+        android:textSize="19sp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_perm"
+       android:layout_marginTop="15dp"
+        android:textColor="#FFFFFF"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_below="@+id/ProfileView">
+
+
+        <TextView
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:text="Enter your skinfold/circumference measurements below:"
+            android:textSize="19sp"
+            android:layout_column="0"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_row="0"
+            android:layout_columnSpan="2"
+            android:textColor="#FFFFFF"
+            android:id="@+id/TopDetails"
+            />
+
+        <TextView
+            android:id="@+id/hipText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:textColor="#FFFFFF"
+            android:text="Hip Circumference:"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/cm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="40dp"
+            android:text="cm"
+            android:textSize="15sp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/hipCircumference"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/ChinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:text="Chin Skinfold:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+
+            />
+
+        <EditText
+            android:id="@+id/ChinNum"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:maxLength="5"
+            android:layout_row="2"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/mm5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="40dp"
+            android:text="mm"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/TricepF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:text="Tricep Skinfold:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+
+            />
+
+        <EditText
+            android:id="@+id/TricepNumF"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_column="1"
+            android:maxLength="4"
+            android:layout_row="3"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp">
+
+        </EditText>
+        <TextView
+            android:id="@+id/mm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="40dp"
+            android:text="mm"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/SubscapularF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:text="Subscapular Skinfold:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+
+            />
+
+        <EditText
+            android:id="@+id/SubscapularNumF"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_column="1"
+            android:maxLength="4"
+            android:layout_row="4"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"></EditText>
+
+        <TextView
+            android:id="@+id/mm4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="40dp"
+            android:text="mm"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/KneeBreadth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:text="Knee Breadth:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/KneeBreadthNum"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_column="1"
+            android:maxLength="5"
+            android:layout_row="5"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/cm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="40dp"
+            android:text="cm"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/WeightF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="6"
+            android:text="Weight:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/WeightNumF"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_column="1"
+            android:maxLength="4"
+            android:layout_row="6"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/kg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_column="1"
+            android:layout_row="6"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="40dp"
+            android:text="kg"
+            android:textSize="15sp"/>
+    </GridLayout>
+    <Button
+        android:id="@+id/CalMeasurementF"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Calculate your BF %"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/transparentbutton"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"/>
+
+
+
+</RelativeLayout>

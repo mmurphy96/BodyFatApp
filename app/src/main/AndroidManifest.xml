@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.michael.bodyfatapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_bodyfaticon_round"
+        android:label="@string/app_name"
+       android:roundIcon="@mipmap/ic_bodyfaticon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.ActionBar.Transparent">
+        <activity android:name=".Login_Register.MainActivity"
+            android:theme="@style/AppTheme.ActionBar.Transparent">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".Menu.MainMenu"
+            android:label="MainMenu"
+            android:theme="@style/AppTheme.ActionBar.Transparent"/>
+
+
+
+
+        <activity android:name=".Login_Register.Register"
+            android:parentActivityName=".Login_Register.MainActivity"
+            android:theme="@style/AppTheme.ActionBar.Transparent"
+            android:label="Register"/>
+        <activity
+            android:name=".Profile.Profiles"
+            android:label="@string/title_activity_profiles"
+            android:parentActivityName=".Menu.MainMenu"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.ActionBar.Transparent"/>
+
+        <activity android:name=".Profile.NewProfile"
+            android:parentActivityName=".Profile.Profiles"
+            android:label="New Profile"/>
+
+
+
+        <activity
+            android:name=".Recordings.Measurements"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Menu.MainMenu"
+            android:label="Measurements"/>
+
+        <activity
+            android:name=".Recordings.NewRecordingMale"
+            android:parentActivityName=".Recordings.Measurements"
+            android:label="New Body Fat Calculation"/>
+
+        <activity
+            android:name=".Recordings.NewRecordingFemale"
+            android:parentActivityName=".Recordings.Measurements"
+            android:label="New Body Fat Calculation"/>
+
+        <activity
+            android:name=".Graphs.GraphMain"
+            android:parentActivityName=".Menu.MainMenu"
+            android:label="Graphs"
+            />
+        <activity
+            android:name=".Account.MyAccount"
+            android:parentActivityName=".Menu.MainMenu" />
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

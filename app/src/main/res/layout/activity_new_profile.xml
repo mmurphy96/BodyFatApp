@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/new_profile"
+        android:id="@+id/profileLayout"
+        android:fitsSystemWindows="true"
+        tools:context="com.example.michael.bodyfatapp.Profile.NewProfile">
+    <TextView
+        android:text="Please Enter the Following Details:"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/RegDetails"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/RegDetails"
+
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:paddingLeft="15dp"
+        android:useDefaultMargins="true"
+        tools:layout_editor_absoluteX="-18dp"
+        tools:layout_editor_absoluteY="-7dp">
+
+
+        <EditText
+            android:id="@+id/selName"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:inputType="text|textCapWords"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/ProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:drawableLeft="@drawable/ic_perm"
+            android:text="Name:"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:drawableLeft="@drawable/icons8_age_48"
+            android:drawablePadding="7dp"
+            android:text="Age:"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/selAge"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:maxLength="2"/>
+
+
+        <TextView
+            android:id="@+id/Weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:drawableLeft="@drawable/icons8_scale_48"
+            android:drawablePadding="7dp"
+            android:text="Weight:"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="130dp"
+            android:layout_row="4"
+            android:text="kg"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/selWeight"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:maxLength="3"/>
+
+        <TextView
+            android:id="@+id/Height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:drawableLeft="@drawable/icons8_height_64"
+            android:drawablePadding="2dp"
+            android:paddingLeft="-5dp"
+            android:text="Height:"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="130dp"
+            android:layout_row="5"
+            android:text="cm"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/selHeight"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:maxLength="3"
+            android:layout_row="5"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF" />
+
+        <Spinner
+            android:id="@+id/selGender"
+            android:layout_width="140dp"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:popupBackground="#a8adaf"
+            android:textColor="#FFFFFF"></Spinner>
+
+        <TextView
+            android:id="@+id/Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:drawableLeft="@drawable/icons8_gender_32"
+            android:drawablePadding="5dp"
+            android:text="Gender:"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+    </GridLayout>
+        <Button
+            android:text="Complete Profile"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:textAllCaps="false"
+            android:id="@+id/CompleteProfile"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/transparentbutton"
+            android:layout_centerHorizontal="true"
+            />
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/measurements"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:fitsSystemWindows="true"
+
+    tools:context="com.example.michael.bodyfatapp.Recordings.Measurements">
+
+    <GridLayout
+        android:id="@+id/measurementGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:columnCount="4"
+        android:columnOrderPreserved="false"
+        android:rowCount="1"
+        android:useDefaultMargins="true">
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="Profile:"
+            android:layout_marginLeft="-20dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_perm"
+            >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/selectProfile"
+            android:layout_width="165dp"
+            android:layout_height="35sp"
+            android:layout_marginRight="5dp"
+            android:popupBackground="#a8adaf"
+            android:layout_column="1"
+            android:layout_row="0"></Spinner>
+
+        <Button
+            android:id="@+id/newMeas"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/ic_add"
+            android:layout_marginLeft="-20dp"/>
+
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:background="@drawable/ic_delete"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:id="@+id/delMeas"
+          />
+
+    </GridLayout>
+
+
+
+    <ExpandableListView
+        android:id="@+id/measurementList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/measurementGrid"/>
+
+</RelativeLayout>
+
